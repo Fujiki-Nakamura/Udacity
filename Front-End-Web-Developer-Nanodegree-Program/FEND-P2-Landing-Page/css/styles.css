@@ -68,6 +68,8 @@ section {
     padding-left: 0;
     margin: 0;
     text-align: right;
+    display: flex;
+    justify-content: flex-end;
 }
 
 .navbar__menu li {
@@ -79,7 +81,7 @@ section {
     padding: 1em;
     font-weight: bold;
     text-decoration: none;
-    color: #000;
+    color: #fff;
 }
 
 .navbar__menu .menu__link:hover {
@@ -88,9 +90,13 @@ section {
     transition: ease 0.3s all;
 }
 
+.active-button {
+    background: #333;
+}
+
 /* Header Styles */
 .page__header {
-    background: #fff;
+    background: rgb(0,13,60,1);
     position: fixed;
     top: 0;
     width: 100%;
