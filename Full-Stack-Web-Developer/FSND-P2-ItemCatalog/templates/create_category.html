@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <h2>Create Category</h2>
+        <form action="{{ url_for('create_category')}}" method="post">
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input type ="text" class="form-control" name="name" value="" required="required">
+            <br>
+            <button type="submit" class="btn btn-success">Create</button>
+        </div>
+        </div>
+        </form>
+      </div>
+    <hr>
+</div>
+{% endblock %}
